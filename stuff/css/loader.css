@@ -1,0 +1,103 @@
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  top: 45%;
+  left: 47%;
+  opacity: 1;
+  z-index: 501;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 1.5s infinite ease-in-out;
+  animation: sk-bounce 1.5s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+#left {
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  z-index: 500;
+  -webkit-transition: width 2s;
+  -ms-transition: width 2s;
+  transition: width 2s;
+}
+
+#right {
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 51%;
+  z-index: 500;
+  -webkit-transition: width 2s;
+  -ms-transition: width 2s;
+  transition: width 2s;
+}
+
+.loaded #left {
+  width: 0%;
+}
+
+.loaded #right {
+  width: 0%;
+}
+
+.loaded2 .spinner {
+  opacity: 0;
+  z-index: -5;
+}
+
+@media only screen and (min-width: 1500px) {
+  .spinner {
+    width: 60px;
+   height: 60px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .spinner {
+    left: 46%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .spinner {
+    left: 43%;
+  }
+}

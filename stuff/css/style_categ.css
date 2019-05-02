@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  margin-bottom: 90px;
+}
+
+.container {
+  height: 100%;
+  width: 90%;
+  padding-left: 10%;
+}
+
+h2{
+  padding-left: 16%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #8c8282;
+  text-align: left;
+  font-size: 3vw;
+  z-index: 11;
+  font-family: 'Montserrat', sans-serif;
+
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+span {
+  position: absolute; 
+  z-index: 12; 
+  padding-left: 6%; 
+  padding-top: 3%; 
+  display: unset; 
+  font-size: 3vw; 
+  opacity: 0.5;
+  color: black;
+}
+
+#alb {  
+  height:80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+#alb_gr {  
+  height:20px;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+  z-index: 10;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 5px;
+  padding-left: 15px;
+  text-align: left;
+  font-size: 1.39vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  float: left;
+  width: 33.33333%;
+
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+    width: 49.99999%;
+  }
+  h2 {
+    position: fixed;
+    font-size: 4vw;
+    padding-top: 0%;
+    padding-left: 13%;
+  }
+  .container {
+    padding-top: 100px;
+  }
+  figcaption {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  h2 {
+    font-size: 6vw;
+    padding-left: 20%;
+  }
+  .desc{
+    font-size: 3vw;
+  }
+  body {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #alb {
+    display: none;
+  }
+  #alb_gr {
+    display: none;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

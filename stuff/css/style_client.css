@@ -1,0 +1,156 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fundal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -2000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -60%);
+  border: 6px solid var(--main-color);
+  padding: 3%;
+  text-align: center;
+}
+
+h1{
+ display: inline-block;
+ font-size: 60px;
+ font-size: 3vw;
+ word-wrap: break-word;
+ color: var(--main-color);
+ line-height: 1vw;
+
+
+ animation: fadein 2s;
+ -moz-animation: fadein 2s; /* Firefox */
+ -webkit-animation: fadein 2s; /* Safari and Chrome */
+ -o-animation: fadein 2s; /* Opera */
+}
+
+h4{
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  font-size: 2vw;
+  word-wrap: break-word;
+  color: var(--main-color);
+  line-height: 1vw;
+
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.content a {
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  font-size: 2vw;
+  word-wrap: break-word;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  padding: 14px 25px;
+
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.content a:hover {
+  background-color: var(--hover-color);
+  opacity: 0.7;
+}
+
+.bottom {
+  position: fixed;
+  width: 100%;
+  height: 4%;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.bottom a {
+  display: inline-block;
+  font-size: 26px;
+  font-size: 1.1vw;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: var(--second-color);
+  letter-spacing: 2px;
+
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    font-size: 5vw;
+    line-height: unset;
+  }
+  h4 {
+    font-size: 21px;
+    font-size: 2.5vw;
+  }
+  .bottom a {
+    font-size: 10px;
+    font-size: 1.4vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 33px;
+    font-size: 8vw;
+    line-height: unset;
+  }
+  h4 {
+    font-size: 17px;
+    font-size: 4vw;
+    padding-bottom: 3%;
+  }
+  .content a {
+    font-size: 12px;
+    font-size: 3vw;
+  }
+  .bottom a {
+    font-size: 10px;
+    font-size: 2.4vw;
+  }
+}

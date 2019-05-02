@@ -1,0 +1,115 @@
+#menu {
+  font-size: 1.09vw;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 10;
+}
+
+/* Navbar links */
+
+.navbar #home a {
+  float: left;
+  display: block;
+  color: #91182c;
+  text-align: left;
+  padding: 26px;
+  text-decoration: none;
+  margin: auto;
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.navbar #menu a {
+  float: left;
+  display: block;
+  color: #91182c;
+  text-align: left;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  margin: auto;
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.navbar #social a img {
+  width: 2%;
+  border: 0;
+  position: absolute;
+  right: 15px;
+  padding-top: 24px;
+
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.navbar #home a:hover {
+  background: #eee;
+}
+
+.navbar #menu a:hover {
+  background: #eee;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar {
+    display: unset;
+  }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 90px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+#alb {  
+  height:80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+#alb_gr {  
+  height:20px;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+span {
+  position: absolute; 
+  z-index: 2; 
+  padding-left: 6%; 
+  padding-top: 3%; 
+  display: unset; 
+  font-size: 3vw; 
+  opacity: 0.5;
+}
+
+h1{
+  padding-left: 16%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #8c8282;
+  text-align: left;
+  font-size: 3vw;
+
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.container {
+  height: 100%;
+  width: 85%;
+  padding-left: 15%;
+}
+
+.col1 {
+  padding: 2%;
+  float: left;
+  width: 39.99999%;
+  padding-bottom: 10%;
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.col1 img {
+	width: 100%;
+	margin-top: 1%;
+
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.col2 {
+  padding: 2%;
+  float: left;
+  width: 59.99999%;
+  padding-bottom: 10%;
+}
+
+p {
+	overflow-wrap: break-word;
+	margin: 0;
+	text-indent: 10%;
+	text-align: left;
+	font-size: 1.4vw;
+
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    position: fixed;
+    font-size: 4vw;
+    padding-top: 0%;
+    padding-left: 13%;
+  }
+  .col1{
+  	width: 90%;
+  	padding-left: 10%;
+  	padding-top: 25%;
+  }
+  .col2 {
+  	width: 100%;
+  	padding-bottom: 10%;
+  	padding-top: 5%;
+  }
+  p {
+  	font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 6vw;
+    padding-left: 20%;
+  }
+  .col1 {
+  	padding-top: 30%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #alb {
+    display: none;
+  }
+  #alb_gr {
+    display: none;
+  }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

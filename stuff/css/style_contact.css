@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  margin-bottom: 90px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#alb {  
+  height:80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+#alb_gr {  
+  height:20px;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+span {
+  position: absolute; 
+  z-index: 2; 
+  padding-left: 6%; 
+  padding-top: 3%; 
+  display: unset; 
+  font-size: 3vw; 
+  opacity: 0.5;
+}
+
+h1{
+  padding-left: 16%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #8c8282;
+  text-align: left;
+  font-size: 3vw;
+
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.container {
+  width: 80%;
+  padding-left: 10%;
+}
+
+.contanier a {
+  padding-top: 1%;
+}
+
+p {
+  overflow-wrap: break-word;
+  margin: 0;
+  text-indent: 10%;
+  text-align: left;
+  font-size: 2vw;
+  line-height: 6vw;
+
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+img {
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.contact {
+  width: 60%;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+.contact input {
+  width: 100%;
+  margin-bottom: 3%;
+  height: 30px;
+}
+
+.contact textarea {
+  width: 100%;
+  margin-bottom: 3%;
+  min-height: 100px;
+}
+
+#submit {
+  width: 60%;
+  margin-left: 20%;
+  background-color: #8c8282;
+  border-style: none;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #8c8282
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    position: fixed;
+    font-size: 4vw;
+    padding-top: 0%;
+    padding-left: 13%;
+  }
+  .container {
+    padding-top: 20%;
+  }
+  p {
+    font-size: 3vw;
+    line-height: 8vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 6vw;
+    padding-left: 20%;
+  }
+  .container {
+    padding-top: 30%;
+  }
+  p {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #alb {
+    display: none;
+  }
+  #alb_gr {
+    display: none;
+  }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
