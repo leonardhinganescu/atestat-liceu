@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jared Polin Contact</title>
+
+	<link rel="shortcut icon" type="image/png" href="stuff/img/favicon.ico"/>
+
+	<link rel="stylesheet" href="stuff/css/style_contact.css" rel="stylesheet">
+	<link rel="stylesheet" href="stuff/css/sticky_menu.css" rel="stylesheet">
+	<link rel="stylesheet" href="stuff/css/menu.css" rel="stylesheet">
+
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:100,300,600'>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	
+	<div id="alb"></div>
+	<div id="alb_gr"></div>
+
+	<div class="navbar">
+		<div id="home">
+			<a href="index.html" style="color: #382c2c; font-size: 1.29vw;">JARED POLIN</a>
+		</div>
+		
+		<div id="menu">
+			<a href="portret.html">Portret</a>
+			<a href="concert.html">Concert</a>
+			<a href="eveniment.html">Eveniment</a>
+			<a href="despre.html">Despre</a>
+			<a href="contact.html" style="color: #8c8282">Contact</a>
+		</div>
+
+		<div id="social">
+			<a href="https://www.instagram.com/jaredpolin" target="_blank">
+				<img src="stuff/img/social/insta.png" style="right: 4vw;">
+			</a>
+
+			<a href="https://www.facebook.com/jaredpolin" target="_blank">
+				<img src="stuff/img/social/fb.png">
+			</a>
+		</div>
+
+	</div>
+
+	<div id="myNav" class="overlay">
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="index.html">Acasă</a>
+			<a href="portret.html">Portret</a>
+			<a href="concert.html">Concert</a>
+			<a href="eveniment.html">Eveniment</a>
+			<a href="despre.html">Despre</a>
+			<a href="contact.html">Contact</a>
+
+			<a href="https://www.instagram.com/jaredpolin" target="_blank" style="text-decoration: none;">
+				<img src="stuff/img/social/insta.png" style="width: 36px; border:0;">
+			</a>
+
+			<a href="https://www.facebook.com/jaredpolin" target="_blank" style="text-decoration: none;">
+				<img src="stuff/img/social/fb.png" style="width:36px; border:0;">
+			</a>
+
+		</div>
+	</div>
+	<span id="buton" onclick="openNav()">
+		<i class="fa fa-bars"></i>
+	</span>
+
+	<h1>   Contact </h1>
+
+	<div class="container">
+		<form class="contact"  action="/action_page.php">
+			<input type="text" placeholder="Nume" name="name">
+
+			<input type="text" placeholder="Email" name="email">
+
+			<textarea name="message"></textarea>
+
+			<input id="submit" type="submit" value="SUBMIT">
+
+		</form>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<script src="stuff/js/menu.js"></script>
+
+</body>
+</html>
